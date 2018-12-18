@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="container-fluid">
-    <h3 class="display-3">Data from stock market visualization (and if I write loshara?)</h3>
+    <h3 class="display-3">Data from stock market visualization (LOSHARA)</h3>
 
 
     <div id="contents-main">
@@ -24,14 +24,18 @@
         </div>
         <div id="contents">
 
-            <h5 th:text="${stats}"></h5>
-            <ul>
+            <div>Price: <span th:text="${price}"></span></div>
+            <div>Shares: <span th:text="${shares}"></span></div>
+            <div>Revenue: <span th:text="${totalRevenue}"></span></div>
+            <div>Sale: <span th:text="${totalRevenue}"></span></div>
+            <div>Stats: <span th:text="${stats}"></span></div>
+            <!--<ul>
                 <li style="list-style-type:none" v-for="player in players">
                     <player-card
                             v-bind:player="player" v-bind:key="player.id">
                     </player-card>
                 </li>
-            </ul>
+            </ul>-->
         </div>
     </div>
 </div>
