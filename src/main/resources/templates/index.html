@@ -25,10 +25,16 @@
         <div id="contents">
 
             <div>Price: <span th:text="${price}"></span></div>
-            <div>Shares: <span th:text="${shares}"></span></div>
-            <div>Revenue: <span th:text="${totalRevenue}"></span></div>
-            <div>Sale: <span th:text="${totalRevenue}"></span></div>
-            <div>Stats: <span th:text="${stats}"></span></div>
+            <div>Shares: <span th:text="${sharesOut}"></span></div>
+            <div>Revenue: <span th:text="${revenue}"></span></div>
+            <div>EBITDA: <span th:text="${ebitda}"></span></div>
+            <div>Book value per share: <span th:text="${bookPerShare}"></span></div>
+            <div>Market Capital: <span th:text="${marketCap}"></span></div>
+            <div>Net Income: <span th:text="${netIncome}"></span></div>
+            <div>Total Debt: <span th:text="${totalDebt}"></span></div>
+            <div>Total Cash: <span th:text="${totalCash}"></span></div>
+            <!--<div>: <span th:text="${}"></span></div>-->
+
             <!--<ul>
                 <li style="list-style-type:none" v-for="player in players">
                     <player-card
