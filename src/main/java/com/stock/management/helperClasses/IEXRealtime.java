@@ -28,16 +28,17 @@ package com.stock.management.helperClasses;
  *
  * @author Thomas Praill <tom@cerudite.com>
  */
-import com.neovisionaries.ws.client.WebSocket;
+/*import com.neovisionaries.ws.client.WebSocket;
 import com.neovisionaries.ws.client.WebSocketAdapter;
 import com.neovisionaries.ws.client.WebSocketFactory;
 import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
+import org.json.simple.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URI;
 import java.net.URL;
-import org.json.simple.JSONObject;
 
 public class IEXRealtime implements Runnable
 {
@@ -204,3 +205,4 @@ public class IEXRealtime implements Runnable
     }
 
 }
+*/

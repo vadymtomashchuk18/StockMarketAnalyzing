@@ -11,6 +11,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 </head>
 <body>
 <div class="container-fluid">
@@ -22,17 +23,34 @@
             <strong>Name of Corp:</strong>
             <span th:text="${name}"></span>
         </div>
-        <div id="contents">
+            <div class="a">
+                <div class="q">
+                    <div>Price: <span th:text="${price}"></span></div>
+                    <div>Shares: <span th:text="${sharesOut}"></span></div>
+                    <div>Revenue: <span th:text="${revenue}"></span></div>
+                    <div>EBITDA: <span th:text="${ebitda}"></span></div>
+                    <div>Book value per share: <span th:text="${bookPerShare}"></span></div>
+                    <div>Market Capital: <span th:text="${marketCap}"></span></div>
+                    <div>Net Income: <span th:text="${netIncome}"></span></div>
+                    <div>Total Debt: <span th:text="${totalDebt}"></span></div>
+                    <div>Total Cash: <span th:text="${totalCash}"></span></div>
+                    <div>P/E</div>
+                    <div>P/BV</div>
+                    <div>EV/S</div>
+                    <div>EV/EBITDA</div>
+                    <div>E</div>
+                    <div>PRICE</div>
+                    <div>BV</div>
+                    <div>PRICE</div>
+                </div>
+                <div class="q">
 
-            <div>Price: <span th:text="${price}"></span></div>
-            <div>Shares: <span th:text="${sharesOut}"></span></div>
-            <div>Revenue: <span th:text="${revenue}"></span></div>
-            <div>EBITDA: <span th:text="${ebitda}"></span></div>
-            <div>Book value per share: <span th:text="${bookPerShare}"></span></div>
-            <div>Market Capital: <span th:text="${marketCap}"></span></div>
-            <div>Net Income: <span th:text="${netIncome}"></span></div>
-            <div>Total Debt: <span th:text="${totalDebt}"></span></div>
-            <div>Total Cash: <span th:text="${totalCash}"></span></div>
+                </div>
+                <div class="q">
+
+                </div>
+            </div>
+
             <!--<div>: <span th:text="${}"></span></div>-->
 
             <!--<ul>
@@ -42,9 +60,32 @@
                     </player-card>
                 </li>
             </ul>-->
-        </div>
+
+
     </div>
 </div>
+
+<style>
+    .a{
+        display:flex;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height:auto;
+
+    }
+    .q{
+        width: 33.33%;
+        height:100%;
+        flex-direction:row;
+        background-color:white;
+        border-left:1px solid black;
+        border-bottom:1px solid black;
+        text-align:center;
+    }
+
+
+</style>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
