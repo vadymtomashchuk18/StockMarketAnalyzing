@@ -15,40 +15,76 @@
 </head>
 <body>
 <div class="container-fluid">
-    <h3 class="display-3">Data from stock market visualization (LOSHARA)</h3>
+    <h3 class="display-3">Data from stock market IEXTrading</h3>
 
 
     <div id="contents-main">
-        <div class="lead">
-            <strong>Name of Corp:</strong>
-            <span th:text="${name}"></span>
-        </div>
             <div class="a">
                 <div class="q">
-                    <div>Price: <span th:text="${price}"></span></div>
-                    <div>Shares: <span th:text="${sharesOut}"></span></div>
-                    <div>Revenue: <span th:text="${revenue}"></span></div>
-                    <div>EBITDA: <span th:text="${ebitda}"></span></div>
-                    <div>Book value per share: <span th:text="${bookPerShare}"></span></div>
-                    <div>Market Capital: <span th:text="${marketCap}"></span></div>
-                    <div>Net Income: <span th:text="${netIncome}"></span></div>
-                    <div>Total Debt: <span th:text="${totalDebt}"></span></div>
-                    <div>Total Cash: <span th:text="${totalCash}"></span></div>
-                    <div>P/E</div>
-                    <div>P/BV</div>
-                    <div>EV/S</div>
-                    <div>EV/EBITDA</div>
-                    <div>E</div>
-                    <div>PRICE</div>
-                    <div>BV</div>
-                    <div>PRICE</div>
-                </div>
-                <div class="q">
 
+                <div class="bold">Name of Corp: <span th:text="${name}"></span></div>
+                    <div class="bold">Price: <span th:text="${price}"></span></div>
+                    <div class="bold" >Shares: <span th:text="${sharesOut}"></span></div>
+                    <div class="bold">Revenue: <span th:text="${revenue}"></span></div>
+                    <div class="bold">EBITDA: <span th:text="${ebitda}"></span></div>
+                    <div class="bold">Book value per share: <span th:text="${bookPerShare}"></span></div>
+                    <div class="bold">Market Capital: <span th:text="${marketCap}"></span></div>
+                    <div class="bold">Net Income: <span th:text="${netIncome}"></span></div>
+                    <div class="bold">Total Debt: <span th:text="${totalDebt}"></span></div>
+                    <div class="bold">Total Cash: <span th:text="${totalCash}"></span></div>
+                    <div class="bold">P/E</div>
+                    <div class="bold">P/BV</div>
+                    <div class="bold">EV/S</div>
+                    <div class="bold">EV/EBITDA</div>
+                    <div class="bold">E</div>
+                    <div class="bold">PRICE</div>
+                    <div class="bold">BV</div>
+                    <div class="bold">PRICE</div>
                 </div>
-                <div class="q">
 
-                </div>
+
+                    <div class="q">
+                        <div class="bold">Name of Corp: <span th:text="${name}"></span></div>
+                        <div class="bold">Price: <span th:text="${price}"></span></div>
+                        <div class="bold" >Shares: <span th:text="${sharesOut}"></span></div>
+                        <div class="bold">Revenue: <span th:text="${revenue}"></span></div>
+                        <div class="bold">EBITDA: <span th:text="${ebitda}"></span></div>
+                        <div class="bold">Book value per share: <span th:text="${bookPerShare}"></span></div>
+                        <div class="bold">Market Capital: <span th:text="${marketCap}"></span></div>
+                        <div class="bold">Net Income: <span th:text="${netIncome}"></span></div>
+                        <div class="bold">Total Debt: <span th:text="${totalDebt}"></span></div>
+                        <div class="bold">Total Cash: <span th:text="${totalCash}"></span></div>
+                        <div class="bold">P/E</div>
+                        <div class="bold">P/BV</div>
+                        <div class="bold">EV/S</div>
+                        <div class="bold">EV/EBITDA</div>
+                        <div class="bold">E</div>
+                        <div class="bold">PRICE</div>
+                        <div class="bold">BV</div>
+                        <div class="bold">PRICE</div>
+                    </div>
+
+                        <div class="q">
+                            <div class="bold">Name of Corp: <span th:text="${name}"></span></div>
+                            <div class="bold">Price: <span th:text="${price}"></span></div>
+                            <div class="bold" >Shares: <span th:text="${sharesOut}"></span></div>
+                            <div class="bold">Revenue: <span th:text="${revenue}"></span></div>
+                            <div class="bold">EBITDA: <span th:text="${ebitda}"></span></div>
+                            <div class="bold">Book value per share: <span th:text="${bookPerShare}"></span></div>
+                            <div class="bold">Market Capital: <span th:text="${marketCap}"></span></div>
+                            <div class="bold">Net Income: <span th:text="${netIncome}"></span></div>
+                            <div class="bold">Total Debt: <span th:text="${totalDebt}"></span></div>
+                            <div class="bold">Total Cash: <span th:text="${totalCash}"></span></div>
+                            <div class="bold">P/E</div>
+                            <div class="bold">P/BV</div>
+                            <div class="bold">EV/S</div>
+                            <div class="bold">EV/EBITDA</div>
+                            <div class="bold">E</div>
+                            <div class="bold">PRICE</div>
+                            <div class="bold">BV</div>
+                            <div class="bold">PRICE</div>
+                        </div>
+
             </div>
 
             <!--<div>: <span th:text="${}"></span></div>-->
@@ -62,12 +98,22 @@
             </ul>-->
 
 
-    </div>
+
 </div>
 
 <style>
+
+    body{
+        background-color: #fffef7;
+    }
+    .container-fluid{
+            text-align:center;
+    }
+
     .a{
+
         display:flex;
+        justify-content:center;
         padding: 0px;
         margin: 0px;
         width: 100%;
@@ -75,15 +121,26 @@
 
     }
     .q{
-        width: 33.33%;
+        width:33%;
         height:100%;
         flex-direction:row;
-        background-color:white;
-        border-left:1px solid black;
-        border-bottom:1px solid black;
+        border:1px solid #5a7087;
+        background-color: #f2fcff;
         text-align:center;
+        font-size:20px;
     }
-
+    .q div{
+        border-bottom:1px solid #d9dadb;
+    }
+    .bold{
+        font-weight: bold;
+    }
+    .bold span{
+        font-weight:normal;
+    }
+    .nameOfCorp{
+        font-size: 22px;
+    }
 
 </style>
 
